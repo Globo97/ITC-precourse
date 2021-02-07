@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+}
+
+/* GENERICS */
+.width-100 {
+  width: 100%;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.content-size {
+  font-size: 1.2rem;
+}
+
+.margin-t-b {
+  margin: 2% 0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.hide {
+  display: none;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+/*  ---------  */
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+}
+
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid beige;
+
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar li {
+
+  flex-basis: 11%;
+  text-align: center;
+  box-shadow: -7px 0px beige;
+}
+
+.nav-link {
+  display: block;
+  color: beige;
+  font-weight: bold;
+  padding: 8% 0;
+  border-radius: 4%;
+  transition: 2s;
+
+}
+
+.actual-tab {
+  color: black
+}
+
+.nav-link:hover {
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 8%;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4%;
+  padding: 4%;
+  width: 60%;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+  font-size: 18px;
+  margin: 15px;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 62vh;
+
+
+}
+
+.wrapper-on-click {
+  background-image: url("https://i.pinimg.com/originals/07/03/6e/07036e12e9ca047f542437befa8872d3.jpg");
+  background-size: 100% 100vh;
+  min-height: 100vh;
+  transition: 3s
+}
+
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+
+
+
+.sm-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  font-size: 2rem;
+  padding: 0 2%;
+  flex-basis: 10%;
+  text-align: center;
+}
+
+
+.about-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  align-items: stretch;
+}
+
+#about-title {
+  font-weight: bolder;
+  margin: 2% 5%;
+  font-size: 2.5rem;
+}
+
+.about {
+  flex-basis: 38%;
+  min-height: 40vh;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg)
+  }
+
+  100% {
+    transform: rotateY(360deg);
+    background-image: linear-gradient(to bottom, lightgray, brown);
+    color: beige;
+  }
+}
+
+.about:active {
+  animation: flip 1.5s ease;
+}
+
+.about:hover {
+  cursor: pointer;
+}
+
+#contact-title {
+  margin-bottom: 0;
+}
+
+#interest-list li {
+  list-style-type: disc;
+  margin-left: 10%;
+}
+
+#experience-list li {
+  border-bottom: 1px solid black;
+  padding: 2% 0;
+  cursor: pointer;
+}
+
+.map-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5%;
+  width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#map-section {
+  margin: 0 auto;
+  padding: 3% 3%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, black, lightgrey);
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+}
+
+#form-section {
+  width: 70%;
+  margin: 12% auto;
+}
+
+.form {
+  align-items: flex-start;
+  margin: 0;
+  width: 100%;
+
+}
+
+.form>* {
+  width: 50%;
+  margin-top: 2%;
+}
+
+.text-reference {
+  background-color: white;
+  flex-basis: 45%;
+  padding: 4%;
+  margin: 0 3%;
+  color: black;
+  box-shadow: -1px -1px 2px 0px #FF6600;
+  border-radius: 5%;
+}
+
+.form>label {
+  width: fit-content;
+  font-weight: bold;
+}
+
+.form>textarea {
+  resize: none;
+  height: 10vh;
+  width: 70%;
+}
+
+.buttons {
+  width: 100%;
+  margin: 2% 0%;
+  align-self: center;
+  text-align: center;
+}
+
+.previous:disabled,
+.next:disabled {
+  visibility: hidden;
+  cursor: not-allowed;
+}
+
+#submit:disabled {
+  background-color: grey;
+}
+
+button {
+  width: 30%;
+  padding: 1% 0;
+  background-color: #FF6600;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.map-container li {
+  margin-top: 4%;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+
+#submit {
+  font-size: 1rem;
+  margin-top: 2%;
+}
+
+.detail {
+  flex-basis: 23%;
+  padding-left: 2%;
+  border-left: 1px solid black;
+}
+
+.selected {
+  color: blue
+}
+
+.required::before {
+  content: " * ";
+  color: red
+}
+
+:disabled:hover {
+  cursor: not-allowed
+}
+
+#required-adv {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: 0;
+  margin-bottom: 4%;
+}
+
+@keyframes color {
+  from {
+    background-image: none;
+    background-color: lightgray
+  }
+
+  to {
+    background-image: none;
+    background-color: #b1c6cc;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.card-on-click {
+  width: 10%;
+  height: 10vh;
+  color: beige;
+  font-weight: bolder;
+}
+
+
+#home-card:hover {
+  animation: color 5s ease-in-out infinite;
+}
+
+#home-card {
+  position: relative;
+  right: 110%;
+  transition: right 2s;
+  transition: 3s;
+}
+
+img:active {
+  animation: spin 1s ease-in-out
+}
+
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: grey;
+  justify-content: space-around;
+  color: beige;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  min-height: 24vh;
+}
+
+.footer {
+  display: inline;
+  margin: 2% 0;
+  text-align: center;
+}

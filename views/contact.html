@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITC Precourse | CONTACT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li class="nav-li">
+            <a class="nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="./about.html">ABOUT</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link actual-tab" href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="form-section">
+      <form class="form card width-100">
+        <h1 id="contact-title">CONTACT</h1>
+        <p id="required-adv">* required fields</p>
+        <label class="required" for="first-name">First name</label>
+        <input type="text" name="first-name" id="first-name" required />
+        <label for="last-name">Last name</label>
+        <input type="text" name="last-name" id="last-name" />
+        <label class="required" for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label class="required" for="comment">Leave a comment</label>
+        <textarea name="comment" id="comment" required></textarea>
+
+        <label class="required">Reason for the contact</label>
+        <label
+          ><input
+            type="radio"
+            name="reason-for-contact"
+            value="Web development"
+            id="web"
+            required
+          />Web development</label
+        >
+
+        <label
+          ><input
+            type="radio"
+            name="reason-for-contact"
+            id="music"
+            value="Music production"
+          />Music Production</label
+        >
+        <label>
+          <input
+            type="radio"
+            name="reason-for-contact"
+            id="security"
+            value="Security consult"
+          />Security consult
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="reason-for-contact"
+            id="other"
+            value="Other"
+          />Other</label
+        >
+
+        <textarea
+          disabled
+          name="reason-for-contact"
+          id="other-description"
+        ></textarea>
+
+        <button disabled id="submit" type="submit">SUBMIT</button>
+      </form>
+    </section>
+
+    <address class="width-100 margin-t-b">
+      <ul class="sm-icons">
+        <li class="icon">
+          <a
+            class="anchor"
+            target="_BLANK"
+            href="https://www.linkedin.com/in/gabriel-rubin-4554691a3/"
+            ><i class="fab fa-linkedin icon"></i
+          ></a>
+        </li>
+        <li class="icon">
+          <a class="anchor" target="_BLANK" href="https://github.com/Globo97"
+            ><i class="fab fa-github icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            class="anchor"
+            target="_BLANK"
+            href="https://es.stackoverflow.com/users/207484/gabriel-rubin"
+            ><i class="fab fa-stack-overflow icon"></i
+          ></a>
+        </li>
+      </ul>
+    </address>
+
+    <footer>
+      <nav class="grow" id="footer-nav">
+        <ul>
+          <li class="text-center margin-t-b">
+            <a class="nav-link footer" href="./index.html">HOME</a>
+          </li>
+          <li class="text-center margin-t-b">
+            <a class="nav-link footer" href="./about.html">ABOUT</a>
+          </li>
+          <li class="text-center margin-t-b">
+            <a class="nav-link footer" href="./contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-info text-center grow"></p>
+      <div class="text-center grow">&#169; Israel Tech Challenge</div>
+    </footer>
+    <script src="../js/portfolio.js"></script>
+    <script src="../js/contact.js"></script>
+  </body>
+</html>
